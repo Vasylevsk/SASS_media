@@ -1,0 +1,54 @@
+.clients {
+  color: $color-content;
+  background-color: $background-color-button;
+  padding-bottom: 150px;
+
+  .columnhalf {
+    color: black;
+    &__color {
+      display: flex;
+      background-color: white;
+      padding: 40px;
+    }
+  }
+  .content {
+    margin-top: 140px;
+    text-align: center;
+  }
+  .text-cite {
+    position: relative;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .text-cite:before,
+  .text-cite:after {
+    position: absolute;
+    font-size: 50px;
+    font-family: Times, sans-serif;
+    line-height: 100px;
+  }
+  .text-cite:before {
+    content: "“";
+    left: -30px;
+    top: -34px;
+  }
+  .text-cite:after {
+    content: "”";
+    right: 48px;
+    bottom: -75px;
+  }
+  p {
+    span {
+      color: red;
+    }
+  }
+
+  img {
+    object-fit: cover;
+    margin-right: 30px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+  }
+}

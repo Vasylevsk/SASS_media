@@ -1,0 +1,137 @@
+body {
+  font-family: $main-font;
+  font-size: $font-size-md;
+}
+
+.container {
+  max-width: $content-width;
+  padding: 0 $content-x-padding;
+  margin: 0 auto;
+}
+
+.row {
+  @extend .d-flex;
+  justify-content: center;
+}
+
+.column {
+  @extend .d-flex;
+  width: 100%;
+}
+
+.columnhalf {
+  @extend .d-flex;
+  width: 50%;
+  margin-top: 70px;
+  padding-left: 50px;
+}
+
+.columnthree {
+  @extend .d-flex;
+  width: calc(100% / 3);
+  @extend .content-center;
+  margin-top: 70px;
+  padding: 0 5px;
+  h2 {
+    color: $background-color-button;
+  }
+  @extend .btn-price;
+}
+
+.columnfour {
+  @extend .d-flex;
+  width: calc(100% / 4);
+  @extend .content-center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.columnthree__content {
+  background-color: $color-content;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 60px;
+  .content__header {
+    margin-bottom: 30px;
+  }
+}
+
+.columnhalf__content {
+  width: 75%;
+  margin: 0;
+}
+.columnhalf__img {
+  width: 25%;
+  margin: 0;
+  height: 100px;
+}
+
+input {
+  height: 40px;
+  font-size: $font-size-xs;
+  width: 200px;
+  vertical-align: middle;
+}
+
+button {
+  background-color: $background-color-button;
+  color: $color-content;
+  border: none;
+  font-size: $font-size-xs;
+  padding: 10px;
+  width: 200px;
+  vertical-align: middle;
+  &:hover {
+    color: $color-content;
+    background-color: red;
+  }
+}
+
+menu {
+  align-items: center;
+  margin: 0;
+  font-size: $font-size-sm;
+}
+
+nav {
+  list-style: none;
+  @extend .d-flex;
+  padding-top: 40px;
+  margin: 0;
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+}
+
+a:hover {
+  transition: 0.3s;
+  background-color: $background-color-button;
+}
+
+@include desktop {
+  .container {
+    max-width: $breackpoint_xxl;
+  }
+}
+
+@include laptop {
+  .container {
+    max-width: $breackpoint_xl;
+  }
+}
+
+@include tablet {
+  .container {
+    max-width: $breackpoint_md;
+  }
+}
+
+@include phone {
+  .container {
+    max-width: $breackpoint_sm;
+  }
+}

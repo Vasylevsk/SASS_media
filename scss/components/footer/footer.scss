@@ -1,0 +1,38 @@
+.footer-menu {
+  display: flex;
+  @extend .content-center;
+  //   nav {
+  //     // justify-content: center;
+  //     // align-items: center;
+  //   }
+
+  .contact {
+    margin-top: 20px;
+
+    h3 {
+      font-weight: normal;
+    }
+    .phone {
+      width: 30px;
+      height: 30px;
+    }
+    img {
+      width: 15px;
+      height: 15px;
+    }
+    .column {
+      justify-content: center;
+    }
+    a {
+      margin-top: 10px;
+      padding: 5px 10px;
+    }
+  }
+}
+.end-footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: $blue-background;
+  color: $color-content;
+}

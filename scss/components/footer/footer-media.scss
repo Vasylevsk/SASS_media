@@ -1,0 +1,16 @@
+@include tablet {
+  .footer-menu {
+    nav {
+      justify-content: center;
+    }
+  }
+}
+
+@include phone {
+  .footer-menu {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

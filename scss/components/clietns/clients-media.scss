@@ -1,0 +1,28 @@
+@include laptop {
+  .clients {
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+@include tablet {
+  .clients {
+    .columnhalf {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+
+@include phone {
+  .clients {
+    .text-cite {
+      position: static;
+    }
+    .text-cite:before,
+    .text-cite:after {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.adress {
+  margin-top: 140px;
+  .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  form {
+    margin-top: 40px;
+  }
+
+  .email {
+    width: 300px;
+  }
+
+  .map {
+    width: 80%;
+    margin: 50px 0 50px 0;
+    height: 600px;
+    // padding: 300px 0 300px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./../imgs/map.jpeg");
+    background-size: 100% 100%;
+    &__content {
+      background-color: #394b50;
+      border-radius: 360px;
+      color: #ffffff;
+      padding: 50px 50px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 98%;
+        transform: translate(-50%, 0);
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid #394b50;
+      }
+      h2 {
+        color: $color-content;
+      }
+      p {
+        color: #a2abae;
+      }
+      .email-adress {
+        color: $background-color-button;
+      }
+    }
+  }
+
+  &__line {
+    color: #e3e7ec;
+    border: 0.5px solid;
+    width: 70%;
+  }
+}

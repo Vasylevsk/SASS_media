@@ -1,0 +1,37 @@
+@include laptop {
+  .price {
+    padding: 80px 0 80px 0;
+    .columnthree {
+      font-size: $font-size-xs;
+      padding: 0 5px;
+      &__content {
+        padding: 10px 30px;
+        margin: 0;
+        &__header {
+          margin-bottom: 0;
+        }
+        .btn-price {
+          margin-top: 10px;
+          padding: 0;
+        }
+        .line-price {
+          margin: 2px 10px;
+        }
+      }
+    }
+  }
+}
+
+@include phone {
+  .price {
+    .columnthree {
+      padding: 10px 10px;
+      &__content {
+        padding: 0;
+        &__header {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

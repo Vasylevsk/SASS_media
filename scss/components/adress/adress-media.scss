@@ -1,0 +1,40 @@
+@include laptop {
+  .adress {
+    input {
+      width: 150px;
+    }
+    .email {
+      width: 200px;
+    }
+    button {
+      width: 150px;
+    }
+  }
+  .map {
+    background-size: cover;
+  }
+}
+
+@include tablet {
+  .adress {
+    input {
+      width: 100px;
+    }
+    .email {
+      width: 150px;
+    }
+    button {
+      width: 150px;
+    }
+    .map {
+      height: 300px;
+      &__content {
+        h2 {
+          font-size: $font-size-sm;
+        }
+        font-size: $font-size-xs;
+        padding: 25px 25px;
+      }
+    }
+  }
+}
